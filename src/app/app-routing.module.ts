@@ -24,8 +24,8 @@ const routes: Routes = [
     component: AdminComponent
   },
   {
-    // path: 'detail',
-    path: 'detail/:id',
+    path: 'detail',
+    // path: 'detail/:id',
     component: DetailComponent
   },
   {
