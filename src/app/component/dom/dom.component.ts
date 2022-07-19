@@ -7,9 +7,11 @@ import { Component, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./dom.component.scss']
 })
 export class DomComponent implements OnInit {
-  @ViewChild('mybox') myBox: any
+  @ViewChild('mybox') myBox1: any
   @ViewChild('childCmp') childCmp: any
 
+  public dwj = 'dengwenjie'
+  ww = 'ww'
   constructor() { }
 
   ngOnInit(): void {
@@ -17,11 +19,19 @@ export class DomComponent implements OnInit {
 
   // 获取 dom
   ngAfterViewInit() {
-    this.myBox.nativeElement.style.color = 'red'
+    this.myBox1.nativeElement.style.color = 'red'
 
     this.childCmp.run()
     console.log(this.childCmp);
 
+  }
+
+  ddd() {
+    console.log('ddd11111111111111111');
+  }
+
+  handleFz(props: string) {
+    console.log(props);
   }
 
 }
