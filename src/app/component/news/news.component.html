@@ -8,3 +8,14 @@
 <div title="我是title">我是静态的属性</div>
 <!-- 动态属性 [属性]="表达式" -->
 <div [title]="title === '' ? '哈哈' : '不是'">我是动态的属性</div>
+<!-- 模板绑定 html 代码 -->
+<div [innerHTML]="content"></div>
+<div>{{userInfo.name === '小邓' ? '文杰' : '表达式'}}</div>
+
+
+<!-- 循环 数据循环  *ngFor 指令 -->
+<ul>
+  <li *ngFor="let item of arr">
+    {{item}}
+  </li>
+</ul>

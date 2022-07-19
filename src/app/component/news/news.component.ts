@@ -32,6 +32,10 @@ export class NewsComponent implements OnInit {
 
   message: string
 
+  public content = '<h3>angular 模板里绑定 html 代码</h3>'
+
+  arr = ['数据循环', '*ngFor', '指令']
+
   constructor() {
     console.log(this.msg);
     console.log(this.userInfo)
