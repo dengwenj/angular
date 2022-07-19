@@ -12,6 +12,8 @@ export class HomeComponent implements OnInit {
   number: number = 1
   color: string = '#ddd'
 
+  today: number = Date.now()
+
   constructor() { }
 
   ngOnInit(): void {

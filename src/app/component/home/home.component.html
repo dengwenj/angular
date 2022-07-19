@@ -27,3 +27,8 @@
 <div [ngClass]="{red: true, fff: true}">11111</div>
 <div [ngStyle]="{color: 'red', fontSize: '50px'}">2222</div>
 <div [ngStyle]="{color}">3333</div>
+
+<!-- 管道  就是可以在模板中调用一些方法 -->
+<div>
+  {{today | date: 'YYYY-MM-dd HH:mm:ss'}}
+</div>
