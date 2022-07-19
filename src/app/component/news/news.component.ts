@@ -20,7 +20,7 @@ export class NewsComponent implements OnInit {
 
   // 绑定数据
   // 定义数据
-  public title = '我输title'
+  public title = '我是 title 动态的'
   data = '绑定数据'
 
   private msg = '我只能在这个类里面才可以访问'

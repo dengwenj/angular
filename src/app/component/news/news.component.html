@@ -4,3 +4,7 @@
 <div>{{message}}</div>
 <div>{{userInfo.name}}</div>
 <div>{{userInfo.age}}</div>
+
+<div title="我是title">我是静态的属性</div>
+<!-- 动态属性 [属性]="表达式" -->
+<div [title]="title === '' ? '哈哈' : '不是'">我是动态的属性</div>
