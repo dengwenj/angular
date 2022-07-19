@@ -31,9 +31,11 @@ export class HomeComponent implements OnInit {
 
   handleKeydown(e: any) {
     console.log(e.target.value);
-
     console.log(this);
+  }
 
+  handleKeywords() {
+    console.log(this.keywords);
   }
 
 }
