@@ -14,6 +14,16 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent,
+    children: [
+      // {
+      //   path: '',
+      //   component: ''  嵌套路由 然后在 login 里面的某个地方展示这个路由组件 <router-outlet></router-outlet> 占个位
+      // },
+      // {
+      //   path: '**', // 任意的路由
+      //   redirectTo: ''
+      // },
+    ]
   },
   {
     path: 'user',
