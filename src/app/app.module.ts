@@ -17,6 +17,9 @@ import { HomeComponent } from './component/home/home.component';
 import { HeaderComponent } from './component/header/header.component';
 import { FormComponent } from './component/form/form.component';
 
+// 服务
+import { StorageService } from './services/storage.service'
+
 // @NgModule 装饰器， @NgModule 接收一个元数据对象，告诉 Angular 如何编译和启动应用
 @NgModule({
   // 配置当前项目运行的组件
@@ -34,7 +37,7 @@ import { FormComponent } from './component/form/form.component';
     FormsModule
   ],
   // 配置项目所需要的服务
-  providers: [],
+  providers: [StorageService],
   // 指定应用的主视角（称为根组件）
   bootstrap: [AppComponent]
 })

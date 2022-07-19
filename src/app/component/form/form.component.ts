@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { StorageService } from 'src/app/services/storage.service';
+
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
@@ -14,9 +16,14 @@ export class FormComponent implements OnInit {
     y: '上海'
   }
 
-  constructor() { }
+  // storage: StorageService 相当于 new StorageService()
+  constructor(public storage: StorageService) {
+    console.log(this.storage.get());
+  }
 
   ngOnInit(): void {
+    console.log(this.storage.get(), '111');
+
   }
 
 

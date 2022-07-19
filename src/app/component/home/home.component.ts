@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { StorageService } from 'src/app/services/storage.service';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -16,7 +18,9 @@ export class HomeComponent implements OnInit {
 
   keywords = 'keywords'
 
-  constructor() { }
+  constructor(public storage: StorageService) {
+
+  }
 
   ngOnInit(): void {
   }
@@ -35,6 +39,7 @@ export class HomeComponent implements OnInit {
   }
 
   handleKeywords() {
+    this.storage.dwj = 'zww'
     console.log(this.keywords);
   }
 
