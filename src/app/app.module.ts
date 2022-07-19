@@ -6,6 +6,7 @@
 import { NgModule } from '@angular/core';
 // BrowserModule 浏览器解析的模块
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms'
 
 // 路由模块
 import { AppRoutingModule } from './app-routing.module';
@@ -27,7 +28,8 @@ import { HeaderComponent } from './component/header/header.component';
   // 配置当前项目运行依赖的其他模块
   imports: [ // 放的模块
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   // 配置项目所需要的服务
   providers: [],

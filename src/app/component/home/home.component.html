@@ -33,5 +33,10 @@
   {{today | date: 'YYYY-MM-dd HH:mm:ss'}}
 </div>
 
-<!-- 事件 -->
+<!-- 事件 (事件名) -->
 <button (click)="handleClick()">事件</button>
+<input (input)="handleKeydown($event)">
+
+<!-- 双向数据绑定 只是在表单里面 app.model 里面还有引入-->
+<input [(ngModel)]="keywords">
+<div>{{keywords}}</div>

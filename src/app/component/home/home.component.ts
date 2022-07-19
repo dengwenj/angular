@@ -14,6 +14,8 @@ export class HomeComponent implements OnInit {
 
   today: number = Date.now()
 
+  keywords = 'keywords'
+
   constructor() { }
 
   ngOnInit(): void {
@@ -26,5 +28,12 @@ export class HomeComponent implements OnInit {
   // handleClick = () => {
   //   console.log(this);
   // }
+
+  handleKeydown(e: any) {
+    console.log(e.target.value);
+
+    console.log(this);
+
+  }
 
 }
