@@ -1,1 +1,29 @@
 <h1>我是首页组件</h1>
+<ul>
+  <li *ngFor="let item of list index as key">
+    {{item}}-{{key}}
+  </li>
+</ul>
+<ul>
+  <div>循环数据显示数据的索引（key）</div>
+  <li *ngFor="let item of list; let key = index">
+    {{item}}-{{key}}
+  </li>
+</ul>
+
+<!-- 条件判断 -->
+<div *ngIf="flag" class="red">哈哈哈</div>
+<div *ngIf="!flag">嘻嘻嘻</div>
+
+<!-- ngSwitch -->
+<div [ngSwitch]="number">
+  <div *ngSwitchCase="1">已支付</div>
+  <div *ngSwitchCase="2">未支付</div>
+  <div *ngSwitchCase="3">已发货</div>
+  <div *ngSwitchDefault>默认</div>
+</div>
+
+<div [ngClass]="number === 1 ? 'red' : 'fff'">我是什么色</div>
+<div [ngClass]="{red: true, fff: true}">11111</div>
+<div [ngStyle]="{color: 'red', fontSize: '50px'}">2222</div>
+<div [ngStyle]="{color}">3333</div>

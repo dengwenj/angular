@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  list: string[] = ['111', '222', '333']
+
+  flag: boolean = false
+  number: number = 1
+  color: string = '#ddd'
 
   constructor() { }
 
