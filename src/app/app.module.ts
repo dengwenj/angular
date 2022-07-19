@@ -15,6 +15,7 @@ import { AppComponent } from './app.component';
 import { NewsComponent } from './component/news/news.component';
 import { HomeComponent } from './component/home/home.component';
 import { HeaderComponent } from './component/header/header.component';
+import { FormComponent } from './component/form/form.component';
 
 // @NgModule 装饰器， @NgModule 接收一个元数据对象，告诉 Angular 如何编译和启动应用
 @NgModule({
@@ -23,7 +24,8 @@ import { HeaderComponent } from './component/header/header.component';
     AppComponent,
     NewsComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    FormComponent
   ],
   // 配置当前项目运行依赖的其他模块
   imports: [ // 放的模块

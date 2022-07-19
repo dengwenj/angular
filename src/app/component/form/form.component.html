@@ -1,0 +1,17 @@
+<h2>人员登记系统</h2>
+
+<div>
+  <span>姓名：</span>
+  <input type="text" [(ngModel)]="userInfo.name">
+</div>
+<div>
+  <input type="radio" value="1" name="sex" [(ngModel)]="userInfo.sex"> 男
+  <input type="radio" value="2" name="sex" [(ngModel)]="userInfo.sex"> 女
+</div>
+<div>
+  <select name="y" id="" [(ngModel)]="userInfo.y">
+    <option *ngFor="let item of userInfo.city" [value]="item">{{item}}</option>
+  </select>
+</div>
+<button (click)="handleGetValue()">获取表单的值</button>
+<h2>{{userInfo.name}}</h2>
