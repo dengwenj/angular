@@ -45,5 +45,4 @@ export class NewsComponent implements OnInit {
   ngOnInit(): void {
     this.message = '我在 ngOnInit 钩子里面改变数据'
   }
-
 }
