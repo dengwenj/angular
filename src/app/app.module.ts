@@ -18,7 +18,8 @@ import { HeaderComponent } from './component/header/header.component';
 import { FormComponent } from './component/form/form.component';
 
 // 服务
-import { StorageService } from './services/storage.service'
+import { StorageService } from './services/storage.service';
+import { DomComponent } from './component/dom/dom.component'
 
 // @NgModule 装饰器， @NgModule 接收一个元数据对象，告诉 Angular 如何编译和启动应用
 @NgModule({
@@ -28,7 +29,8 @@ import { StorageService } from './services/storage.service'
     NewsComponent,
     HomeComponent,
     HeaderComponent,
-    FormComponent
+    FormComponent,
+    DomComponent
   ],
   // 配置当前项目运行依赖的其他模块
   imports: [ // 放的模块

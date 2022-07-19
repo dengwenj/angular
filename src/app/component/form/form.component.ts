@@ -21,11 +21,17 @@ export class FormComponent implements OnInit {
     console.log(this.storage.get());
   }
 
+  // 组件和指令初始化完成，并不是真正的 dom 加载完成
   ngOnInit(): void {
     console.log(this.storage.get(), '111');
 
   }
 
+  // dom 加载完成（dom 操作放在这里面）
+  ngAfterViewInit() {
+    console.log(11);
+
+  }
 
   handleGetValue() {
     console.log(this);
