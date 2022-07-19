@@ -1,1 +1,8 @@
-<p>user works!</p>
+<ul>
+  <li *ngFor="let item of hhh; let key = index">
+    <!-- get 传值 -->
+    <!-- <a [routerLink]="['/detail']" [queryParams]="{id: key}">{{item}}</a> -->
+    <!-- 动态路由 -->
+    <a [routerLink]="['/detail', key]">{{item}}</a>
+  </li>
+</ul>
