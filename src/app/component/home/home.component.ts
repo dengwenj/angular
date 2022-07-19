@@ -19,4 +19,12 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  handleClick() {
+    console.log(this)
+    this.number = 2
+  }
+  // handleClick = () => {
+  //   console.log(this);
+  // }
+
 }
