@@ -1,7 +1,32 @@
+/**
+ * 配置路由的模块
+ */
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { LoginComponent } from './pages/login/login.component';
+import { UserComponent } from './pages/user/user.component';
+import { AdminComponent } from './pages/admin/admin.component';
+
+const routes: Routes = [
+  {
+    path: 'login',
+    component: LoginComponent,
+  },
+  {
+    path: 'user',
+    component: UserComponent
+  },
+  {
+    path: 'admin',
+    component: AdminComponent
+  },
+  {
+    path: '**', // 任意的路由
+    redirectTo: '/login'
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
