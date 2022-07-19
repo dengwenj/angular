@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 
+// ViewChild 还可以获取子组件 调用子组件的方法
 @Component({
   selector: 'app-dom',
   templateUrl: './dom.component.html',
@@ -7,6 +8,8 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 })
 export class DomComponent implements OnInit {
   @ViewChild('mybox') myBox: any
+  @ViewChild('childCmp') childCmp: any
+
   constructor() { }
 
   ngOnInit(): void {
@@ -15,6 +18,10 @@ export class DomComponent implements OnInit {
   // 获取 dom
   ngAfterViewInit() {
     this.myBox.nativeElement.style.color = 'red'
+
+    this.childCmp.run()
+    console.log(this.childCmp);
+
   }
 
 }

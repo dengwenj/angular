@@ -19,7 +19,8 @@ import { FormComponent } from './component/form/form.component';
 
 // 服务
 import { StorageService } from './services/storage.service';
-import { DomComponent } from './component/dom/dom.component'
+import { DomComponent } from './component/dom/dom.component';
+import { ChildCmpComponent } from './component/child-cmp/child-cmp.component'
 
 // @NgModule 装饰器， @NgModule 接收一个元数据对象，告诉 Angular 如何编译和启动应用
 @NgModule({
@@ -30,7 +31,8 @@ import { DomComponent } from './component/dom/dom.component'
     HomeComponent,
     HeaderComponent,
     FormComponent,
-    DomComponent
+    DomComponent,
+    ChildCmpComponent
   ],
   // 配置当前项目运行依赖的其他模块
   imports: [ // 放的模块
