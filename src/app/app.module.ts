@@ -12,13 +12,17 @@ import { AppRoutingModule } from './app-routing.module';
 // 根组件
 import { AppComponent } from './app.component';
 import { NewsComponent } from './component/news/news.component';
+import { HomeComponent } from './component/home/home.component';
+import { HeaderComponent } from './component/header/header.component';
 
 // @NgModule 装饰器， @NgModule 接收一个元数据对象，告诉 Angular 如何编译和启动应用
 @NgModule({
   // 配置当前项目运行的组件
   declarations: [
     AppComponent,
-    NewsComponent
+    NewsComponent,
+    HomeComponent,
+    HeaderComponent
   ],
   // 配置当前项目运行依赖的其他模块
   imports: [
