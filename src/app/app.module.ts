@@ -18,14 +18,14 @@ import { HeaderComponent } from './component/header/header.component';
 // @NgModule 装饰器， @NgModule 接收一个元数据对象，告诉 Angular 如何编译和启动应用
 @NgModule({
   // 配置当前项目运行的组件
-  declarations: [
+  declarations: [ // 放的组件
     AppComponent,
     NewsComponent,
     HomeComponent,
     HeaderComponent
   ],
   // 配置当前项目运行依赖的其他模块
-  imports: [
+  imports: [ // 放的模块
     BrowserModule,
     AppRoutingModule
   ],
